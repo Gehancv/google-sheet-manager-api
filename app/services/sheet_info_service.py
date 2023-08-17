@@ -15,7 +15,7 @@ class SheetInfoService:
         self.client = client
         self.logger = logging.getLogger(__name__)
 
-    def update_row_count(self, worksheet_name, row_count):
+    def update_row_count(self, worksheet_name, row_count=None):
         """
         Update info sheet with no. of rows in the given data sheet.
         """

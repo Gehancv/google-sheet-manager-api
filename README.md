@@ -1,21 +1,9 @@
-# Google Sheet Manager API
+## Name: google-sheet-manager-api
+## Description: Python API  to manage google worksheet as a database. 
 
-[![PyPI - Version](https://img.shields.io/pypi/v/google-sheet-manager-api.svg)](https://pypi.org/project/google-sheet-manager-api)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/google-sheet-manager-api.svg)](https://pypi.org/project/google-sheet-manager-api)
-
------
-
-**Table of Contents**
-
-- [Installation](#installation)
-- [License](#license)
-
-## Installation
-
-```console
-pip install google-sheet-manager-api
-```
-
-## License
-
-`google-sheet-manager-api` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+## Steps to test
+    - Install Uvicorn ASGI Web server by "pip install uvicorn"
+    - Navigate to the root folder and type command: "uvicorn main:app"
+    - Navigate to the URL in the terminal to access Swagger API
+    
+     
