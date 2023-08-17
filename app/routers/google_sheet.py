@@ -9,7 +9,7 @@ from app.controllers.google_sheet_controller import GoogleSheetController
 router = APIRouter(prefix="/google-sheet")
 
 
-@router.post("/get-all-sheet-names")
+@router.get("/get-all-sheet-names")
 async def get_all_sheet_names(
     path: str = Query(
         ..., description="Path to the credentials.json file")):
