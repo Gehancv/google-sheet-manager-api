@@ -1,0 +1,28 @@
+2023-08-17 15:33:49 [INFO] [app.services.authenticate_service]: Authentication successful.
+2023-08-17 15:33:51 [INFO] [app.services.data_service]: Completed writing data to the new sheet salisbury poisoning
+2023-08-17 15:33:52 [INFO] [app.services.column_data_service]: [['Start Date(YYYY_mm_dd)', "<class 'str'>", "'salisbury poisoning'"], ['End Date(YYYY_mm_dd)', "<class 'str'>", "'salisbury poisoning'"], ['id', "<class 'str'>", "'salisbury poisoning'"], ['Collected', "<class 'str'>", "'salisbury poisoning'"], ['File Name(StartDate_to_EndDate_QueryIdentifier.csv.zip', "<class 'str'>", "'salisbury poisoning'"], ['Comments', "<class 'str'>", "'salisbury poisoning'"], ['Person', "<class 'str'>", "'salisbury poisoning'"]]
+2023-08-17 15:33:52 [INFO] [app.services.column_data_service]: Successfully updated column info of 'salisbury poisoning' in column_data
+2023-08-17 15:33:53 [INFO] [app.services.sheet_info_service]: Succesffully updatd the row count of data sheet 'salisbury poisoning' in  sheet_data
+2023-08-17 15:33:53 [INFO] [app.controllers.google_sheet_controller]: Data written to new sheet successfully
+2023-08-17 15:59:09 [INFO] [app.services.authenticate_service]: Authentication successful.
+2023-08-17 15:59:11 [INFO] [app.services.data_service]: Completed writing data to the new sheet salisbury poisoning
+2023-08-17 15:59:12 [INFO] [app.services.column_data_service]: [['Start Date(YYYY_mm_dd)', "<class 'str'>", "'salisbury poisoning'"], ['End Date(YYYY_mm_dd)', "<class 'str'>", "'salisbury poisoning'"], ['id', "<class 'str'>", "'salisbury poisoning'"], ['Collected', "<class 'str'>", "'salisbury poisoning'"], ['File Name(StartDate_to_EndDate_QueryIdentifier.csv.zip', "<class 'str'>", "'salisbury poisoning'"], ['Comments', "<class 'str'>", "'salisbury poisoning'"], ['Person', "<class 'str'>", "'salisbury poisoning'"]]
+2023-08-17 15:59:12 [INFO] [app.services.column_data_service]: Successfully updated column info of 'salisbury poisoning' in column_data
+2023-08-17 15:59:13 [INFO] [app.services.sheet_info_service]: Succesffully updatd the row count of data sheet 'salisbury poisoning' in  sheet_data
+2023-08-17 15:59:13 [INFO] [app.controllers.google_sheet_controller]: Data written to new sheet successfully
+2023-08-17 16:00:05 [INFO] [app.services.authenticate_service]: Authentication successful.
+2023-08-17 16:00:07 [ERROR] [app.services.data_service]: DataService - write_data_to_new_sheet: {'code': 400, 'message': 'Invalid requests[0].addSheet: A sheet with the name "salisbury poisoning" already exists. Please enter another name.', 'status': 'INVALID_ARGUMENT'}
+Traceback (most recent call last):
+  File "C:\Users\dines\OneDrive\Documents\Masters\UCF\CASL\google-sheet-manager-api\app\services\data_service.py", line 64, in write_data_to_new_sheet
+    sheet = workbook.add_worksheet(
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dines\AppData\Local\Programs\Python\Python311\Lib\site-packages\gspread\spreadsheet.py", line 377, in add_worksheet
+    data = self.batch_update(body)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dines\AppData\Local\Programs\Python\Python311\Lib\site-packages\gspread\spreadsheet.py", line 131, in batch_update
+    r = self.client.request(
+        ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dines\AppData\Local\Programs\Python\Python311\Lib\site-packages\gspread\client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 400, 'message': 'Invalid requests[0].addSheet: A sheet with the name "salisbury poisoning" already exists. Please enter another name.', 'status': 'INVALID_ARGUMENT'}
+2023-08-17 16:00:07 [ERROR] [app.controllers.google_sheet_controller]: Error writing data to new sheet: {'code': 400, 'message': 'Invalid requests[0].addSheet: A sheet with the name "salisbury poisoning" already exists. Please enter another name.', 'status': 'INVALID_ARGUMENT'}
